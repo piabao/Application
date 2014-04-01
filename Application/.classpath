@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/bridj-0.7-20131007.003529-54.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/eclipselink.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/jasperreports-5.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/jasperreports-html-component-5.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/javafx-dialogs-0.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/javax.persistence_2.1.0.v201304241213.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/mysql-connector-java-5.1.8-bin.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/org.eclipse.persistence.jpa.jpql_2.5.0.v20130507-3faac2b.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="D:/condominio/libs/webcam-capture-0.3.10-RC6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

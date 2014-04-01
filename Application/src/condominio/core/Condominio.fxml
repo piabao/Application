@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="condominio.core.CondominioFxController">
+  <children>
+    <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="894.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Portaria">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#AbrirBusca" text="Busca" fx:id="portariaBusca" />
+            <MenuItem mnemonicParsing="false" onAction="#AbrirCadastro" text="Cadastro" fx:id="portariaCadastro" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Acesso">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Controle de Acesso" />
+            <MenuItem mnemonicParsing="false" text="Histórico" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Administrativo">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#AbrirPermissoes" text="Permissões" fx:id="permisoes" />
+            <MenuItem mnemonicParsing="false" onAction="#AbrirRelatorios" text="Relatórios" />
+            <MenuItem mnemonicParsing="false" text="Gráficos" />
+            <MenuItem mnemonicParsing="false" text="Outros" />
+          </items>
+        </Menu>
+        <Menu disable="false" mnemonicParsing="false" text="Ajuda">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Manuais" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, 0x00000000 0.0%, 0x404040ff 20.0%, 0x404040ff 100.0%)" height="24.0" layoutX="696.0" layoutY="0.0" smooth="true" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="562.0" />
+    <Label fx:id="sair" layoutX="961.0" layoutY="4.0" onMouseClicked="#sair" text="Sair" textAlignment="CENTER" textFill="WHITE" />
+    <Label fx:id="bemVindo" layoutX="745.0" layoutY="4.0" text="Bem Vindo " textFill="WHITE" />
+  </children>
+</AnchorPane>

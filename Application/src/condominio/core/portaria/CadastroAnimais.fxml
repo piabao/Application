@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="477.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="condominio.core.portaria.AnimaisFxController">
+  <children>
+    <Separator layoutX="0.0" layoutY="2.0" orientation="VERTICAL" prefHeight="386.0" />
+    <Separator layoutX="2.0" layoutY="2.0" prefWidth="461.0" />
+    <Rectangle arcHeight="0.0" arcWidth="5.0" fill="linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, 0xd2ff99ff 0.0%, 0xffffffff 90.0%, 0xffffffff 100.0%)" height="30.0" layoutX="5.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="471.9999694824219" />
+    <Text layoutX="17.0" layoutY="24.0" scaleX="1.0" scaleY="1.0" strikethrough="false" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.4" text="Cadastro de Animais" underline="false">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Text>
+    <Label layoutX="18.0" layoutY="59.0" text="Nome :" />
+    <TextField id="nome" fx:id="nomeAnimal" layoutX="17.0" layoutY="75.0" prefWidth="138.0" />
+    <Label id="nomeLabel" layoutX="19.0" layoutY="154.0" text="Porte :" />
+    <Label layoutX="19.0" layoutY="200.0" text="Cor :" />
+    <TextField id="cpf" fx:id="CorAnimal" layoutX="18.0" layoutY="216.0" prefWidth="138.0" />
+    <Button fx:id="concluirAnimal" defaultButton="true" layoutX="331.0" layoutY="350.0" mnemonicParsing="false" onAction="#concluirAnimal" text="Concluir" />
+    <Button fx:id="cancelarAnimal" cancelButton="true" layoutX="253.0" layoutY="350.0" mnemonicParsing="false" onAction="#cancelarAnimal" text="Cancelar" />
+    <ComboBox id="tipo" fx:id="porte" layoutX="19.0" layoutY="170.0" prefHeight="21.0" prefWidth="138.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Pequeno" />
+          <String fx:value="Medio" />
+          <String fx:value="Grande" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="19.0" layoutY="105.0" text="Tipo de Animal :" />
+    <TextField id="nome" fx:id="tipo" layoutX="18.0" layoutY="121.0" prefWidth="138.0" />
+  </children>
+</AnchorPane>

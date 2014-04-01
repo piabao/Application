@@ -1,0 +1,17 @@
+/* ToolBar buttons background and font*/
+
+
+.okButton {
+	-fx-background-color:
+        linear-gradient(#3385FF, #0052CC),
+        radial-gradient(center 50% -40%, radius 200%, #3385FF 45%, #0052CC 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+}
+
+.removeButton {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-text-fill: white;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="CondominioPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>condominio.server.modelo.CadastroCondomino</class>
+    <class>condominio.server.modelo.VEICULOS</class>
+    <class>condominio.server.modelo.ANIMAIS</class>
+    <class>condominio.server.modelo.TELEFONES</class>
+    <class>condominio.server.modelo.TIPO_MORADOR</class>
+    <class>condominio.server.modelo.CADASTRO_MORADOR</class>
+    <class>condominio.server.modelo.OPERADORA</class>
+    <class>condominio.server.modelo.USUARIO</class>
+    <class>condominio.server.modelo.PRIVILEGIOS</class>
+    <class>condominio.server.modelo.MODELO</class>
+    <properties>
+<!--       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/moradasII?zeroDateTimeBehavior=convertToNull"/> -->
+<!--       <property name="javax.persistence.jdbc.password" value="admin"/> -->
+<!--       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/> -->
+<!--       <property name="javax.persistence.jdbc.user" value="root"/> -->
+
+
+<!-- <property name="javax.persistence.jdbc.url" value="jdbc:mysql://mysql.hostinger.com.br/u263507661_morp2?zeroDateTimeBehavior=convertToNull"/> -->
+<!--       <property name="javax.persistence.jdbc.password" value="powerful"/> -->
+<!--       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/> -->
+<!--       <property name="javax.persistence.jdbc.user" value="u263507661_root"/> -->
+<!--       <property name="javax.persistence.schema-generation.database.action" value="create"/> -->
+      
+<!--       <property name="eclipselink.jdbc.write-connections.max" value="10000"/> -->
+<!--       <property name="eclipselink.jdbc.connection_pool.default.wait" value="200"/>  -->
+
+<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/condominio?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.password" value="powerful"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+       
+
+		<property name="javax.persistence.schema-generation.database.action" value="create"/>
+      
+      <property name="eclipselink.jdbc.write-connections.max" value="10000"/>
+      <property name="eclipselink.jdbc.connection_pool.default.wait" value="200"/> 
+    </properties>
+  </persistence-unit>
+</persistence>

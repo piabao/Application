@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="477.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="condominio.core.portaria.VeiculosFxController">
+  <children>
+    <Separator layoutX="0.0" layoutY="2.0" orientation="VERTICAL" prefHeight="386.0" />
+    <Separator layoutX="2.0" layoutY="2.0" prefWidth="461.0" />
+    <Rectangle arcHeight="0.0" arcWidth="5.0" fill="linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, 0xd2ff99ff 0.0%, 0xffffffff 90.0%, 0xffffffff 100.0%)" height="30.0" layoutX="5.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="471.9999694824219" />
+    <Text layoutX="17.0" layoutY="24.0" scaleX="1.0" scaleY="1.0" strikethrough="false" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.4" text="Cadastro de Veículos" underline="false">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Text>
+    <Label layoutX="18.0" layoutY="59.0" text="Placa do Veículo :" />
+    <TextField id="nome" fx:id="placa" layoutX="17.0" layoutY="75.0" prefWidth="101.0" />
+    <Label id="nomeLabel" layoutX="18.0" layoutY="152.0" text="Modelo :" />
+    <TextField id="nome" fx:id="modeloVeiculo" layoutX="17.0" layoutY="168.0" prefWidth="264.0" />
+    <Label layoutX="18.0" layoutY="198.0" text="Cor :" />
+    <TextField id="cpf" fx:id="corVeiculo" layoutX="17.0" layoutY="214.0" prefWidth="138.0" />
+    <Label layoutX="18.0" layoutY="105.0" text="Tipo de Veículo :" />
+    <ComboBox id="tipo" fx:id="TipoVeiculo" layoutX="17.0" layoutY="123.0" prefHeight="21.0" prefWidth="138.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button fx:id="concluirVeiculo" defaultButton="true" layoutX="331.0" layoutY="350.0" mnemonicParsing="false" onAction="#concluirVeiculo" text="Concluir" />
+    <Button fx:id="cancelarVeiculo" cancelButton="true" layoutX="253.0" layoutY="350.0" mnemonicParsing="false" onAction="#cancelarVeiculo" text="Cancelar" />
+    <ListView fx:id="resultado" layoutX="19.0" layoutY="188.0" prefHeight="94.0" prefWidth="255.0" />
+  </children>
+</AnchorPane>

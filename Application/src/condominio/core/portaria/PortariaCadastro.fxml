@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="condominio.core.portaria.PortariaFxController">
+  <children>
+    <Separator layoutX="3.0" layoutY="3.0" orientation="VERTICAL" prefHeight="546.0" />
+    <Separator layoutX="5.0" layoutY="3.0" prefWidth="770.0" />
+    <Rectangle arcHeight="0.0" arcWidth="5.0" fill="linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, 0xd2ff99ff 0.0%, 0xffffffff 90.0%, 0xffffffff 100.0%)" height="30.0" layoutX="8.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="781.0" />
+    <Text layoutX="20.0" layoutY="25.0" scaleX="1.0" scaleY="1.0" strikethrough="false" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.4" text="Cadastro de Condôminos" underline="false">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Text>
+    <Label layoutX="18.0" layoutY="57.0" text="Idêntificação da Unidade :" />
+    <TextField id="nome" fx:id="identificacao" layoutX="17.0" layoutY="73.0" onAction="#onIdentificationWrite" prefWidth="69.0" />
+    <Label fx:id="nomeLabel" layoutX="18.0" layoutY="150.0" text="Nome do Propietário :" />
+    <TextField fx:id="nome" layoutX="17.0" layoutY="166.0" prefWidth="264.0" />
+    <Label layoutX="18.0" layoutY="196.0" text="CPF/CNPJ :" />
+    <TextField fx:id="cpf" layoutX="17.0" layoutY="212.0" prefWidth="138.0" />
+    <Label layoutX="19.0" layoutY="335.0" text="Foto :" />
+    <ImageView fx:id="foto" fitHeight="150.0" fitWidth="200.0" layoutX="19.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/unknown_user.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="ProcFoto" layoutX="154.0" layoutY="511.0" mnemonicParsing="false" onAction="#procurarImagem" text="Procurar" />
+    <Label layoutX="18.0" layoutY="103.0" text="Tipo de Responsábiidade :" />
+    <ComboBox fx:id="tipo" layoutX="17.0" layoutY="121.0" prefHeight="21.0" prefWidth="138.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="18.0" layoutY="289.0" text="E-mail :" />
+    <TextField fx:id="email" layoutX="17.0" layoutY="305.0" prefWidth="138.0" />
+    <Label layoutX="18.0" layoutY="242.0" text="Vaga de Garagem :" />
+    <TextField fx:id="vaga" layoutX="17.0" layoutY="259.0" prefWidth="69.0" />
+    <Label layoutX="343.0" layoutY="57.0" text="Telefones :" />
+    <Button fx:id="CadVeiculos" layoutX="345.0" layoutY="247.0" mnemonicParsing="false" onAction="#abrirVeiculo" text="Cadastrar" />
+    <Label layoutX="342.0" layoutY="166.0" text="Veiculos :" />
+    <Label layoutX="342.0" layoutY="276.0" text="Animal de Estimação :" />
+    <Button fx:id="CadTelefones" layoutX="346.0" layoutY="137.0" mnemonicParsing="false" onAction="#abrirTelefone" text="Adicionar" />
+    <Button fx:id="limpar" layoutX="449.0" layoutY="511.0" mnemonicParsing="false" onAction="#cancelar" text="Limpar" />
+    <Button fx:id="cadastrar" cancelButton="false" defaultButton="false" layoutX="522.0" layoutY="511.0" mnemonicParsing="false" onAction="#cadastrar" styleClass="okButton" text="Cadastrar" />
+    <ListView id="telefone" fx:id="telefoneListView" disable="false" editable="false" focusTraversable="true" layoutX="344.0" layoutY="77.0" orientation="VERTICAL" prefHeight="54.0" prefWidth="207.0" visible="true" />
+    <Button id="CadVeiculos" layoutX="430.0" layoutY="137.0" mnemonicParsing="false" onAction="#editarTelefone" text="Editar" />
+    <Button id="CadVeiculos" layoutX="495.0" layoutY="137.0" mnemonicParsing="false" onAction="#excluirTelefone" text="Excluir" />
+    <ListView id="veiculos" fx:id="veiculosListView" disable="false" editable="false" focusTraversable="true" layoutX="345.0" layoutY="187.0" orientation="VERTICAL" prefHeight="54.0" prefWidth="207.0" visible="true" />
+    <Button id="CadVeiculos" layoutX="430.0" layoutY="247.0" mnemonicParsing="false" onAction="#editarVeiculo" text="Editar" />
+    <Button id="CadVeiculos" layoutX="494.0" layoutY="246.0" mnemonicParsing="false" onAction="#excluirVeiculo" text="Excluir" />
+    <Button fx:id="CadAnimais" layoutX="343.0" layoutY="355.0" mnemonicParsing="false" onAction="#abrirAnimal" text="Cadastrar" />
+    <Button id="CadVeiculos" layoutX="429.0" layoutY="356.0" mnemonicParsing="false" onAction="#editarAnimal" text="Editar" />
+    <Button id="CadVeiculos" layoutX="493.0" layoutY="355.0" mnemonicParsing="false" onAction="#excluirAnimal" text="Excluir" />
+    <ListView id="listView" fx:id="animaisListView" layoutX="346.0" layoutY="294.0" prefHeight="54.0" prefWidth="207.0" />
+    <Label layoutX="343.0" layoutY="384.0" text="Observaçoes:" />
+    <TextArea fx:id="observacoes" layoutX="342.0" layoutY="400.0" prefHeight="90.0" prefWidth="206.9998779296875" wrapText="true" />
+    <Button id="limpar" fx:id="remover" layoutX="363.0" layoutY="511.0" mnemonicParsing="false" onAction="#remover" styleClass="removeButton" text="Remover" />
+    <Button layoutX="79.0" layoutY="511.0" mnemonicParsing="false" onAction="#webCam" text="WebCam" />
+  </children>
+  <stylesheets>
+    <URL value="@../Application.css" />
+  </stylesheets>
+</AnchorPane>
